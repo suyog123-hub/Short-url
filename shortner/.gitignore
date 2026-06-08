@@ -1,0 +1,5 @@
+.mvenv/
+__pycache__/
+*.py[cod]
+/media
+.env
