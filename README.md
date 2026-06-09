@@ -7,11 +7,8 @@ A full-featured URL shortener web application built with Django. Create short, m
 - ✅ **User Authentication** – Register, login, logout functionality
 - ✅ **URL Shortening** – Convert long URLs into short, shareable links
 - ✅ **User Dashboard** – View, edit, and delete your created short URLs
-- ✅ **Click Tracking** – Track how many times each short URL is visited
 - ✅ **User-Specific URLs** – Each user sees only their own URLs
 - ✅ **Responsive Design** – Works on desktop, tablet, and mobile devices
-- ✅ **Bootstrap 5 UI** – Clean and modern user interface
-- ✅ **AJAX Operations** – Edit and delete without page reload
 - ✅ **Copy to Clipboard** – One-click copy of short URLs
 - ✅ **Custom Short Keys** – Option to create custom short URLs
 
@@ -33,9 +30,35 @@ A full-featured URL shortener web application built with Django. Create short, m
 - PostgreSQL (optional, SQLite works for development)
 
 ## 🚀 Installation
+### Prerequisites
+- Python 3.8 or higher
+- PostgreSQL (optional, SQLite works for development)
+- Git
 
-### 1. Clone the Repository
+### Step-by-Step Setup
 
 ```bash
-git clone https://github.com/suyog123-hub/Short-url.git
-cd Short-url
+# 1. Clone the repository
+git clone https://github.com/suyog123-hub/E-learning-platform.git
+cd shortner
+
+# 2. Create virtual environment
+python -m venv venv
+
+# 3. Activate virtual environment
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+
+# 4. Install dependencies
+pip install -r requirements.txt
+
+# 5. Set up database
+python manage.py migrate
+
+# 6. Create superuser (admin account)
+python manage.py createsuperuser
+
+# 7. Run development server
+python manage.py runserver
