@@ -6,6 +6,7 @@ from .models import ShortURL
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.views.generic import UpdateView,DeleteView,CreateView
+
 @login_required(login_url='signin')
 def home(request):
     """Home page - create short URLs and show user's URLs"""
